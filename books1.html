@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Online library management system</title>
+        <link rel="stylesheet" href="style1.css" type="text/css">
+
+
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            </style>
+
+
+    </head>
+    <body>
+      <div class="nav">
+        <b>
+        <a href="home1.html">Home</a>
+        <a class="active" href="frame.html">Books</a>
+        <a href="contact1.html">Contact Us</a>
+        <!--<a href="#about">About</a> -->
+        </b>
+      </div>
+    
+      <center><h2>Search here</h2></center>
+      <input type="text" id="cont1" onkeyup="myFunction()" placeholder="Search...." title="Type in a name">
+      <br>
+      <b style="font-size:30px;">
+      <b style="font-size:25px;color: rgb(20, 18, 20);">
+              search results:<div id="count"></div>
+      </b>
+      <div class="fixTableHead">
+        <table id="table1">
+          <tr class="header">
+            <th style="width:30%;">Title of Book</th>
+            <th style="width:30%;">Author</th>
+            <th style="width:30%;">Subject</th>
+            <th style="width:30%;">Published Year</th>
+            <th style="width:30%;">Cover page</th>
+
+          </tr>
+          <tr>
+            <td>A Better India: A Better World</td>
+            <td>Narayana Murthy</td>
+            <td>Literary Fiction</td>
+            <td>2001</td>
+            <td><img src="images/b1.jpg" style="width:60px; height:70px;"></td>
+
+          </tr>
+          <tr>
+            <td>A Passage to India</td>
+            <td>E.M. Foster</td>
+            <td>Fantasy</td>
+            <td>2011</td>
+            <td><img src="images/b1.jpg" style="width:60px; height:70px;"></td>
+          </tr>
+          <tr>
+            <td>David Copperfield</td>
+            <td>Charles Darwin</td>
+            <td>Literary Fiction</td>
+            <td>2003</td>
+            <td><img src="images/b1.jpg" style="width:60px; height:70px;"></td>
+          </tr>
+          <tr>
+            <td>A Tale of Two Cities</td>
+            <td>Charles Darwin</td>
+            <td>Horror</td>
+            <td>2012</td>
+            <td><img src="images/b1.jpg" style="width:60px; height:70px;"></td>
+          </tr>
+          <tr>
+            <td>Pinjar</td>
+            <td>Amrita Pritam</td>
+            <td>Classics.</td>
+            <td>2011</td>
+            <td><img src="images/b1.jpg" style="width:60px; height:70px;"></td>
+          </tr>
+          <tr>
+            <td>Death of a City</td>
+            <td>Amrita Pritam</td>
+            <td>Detective and Mystery</td>
+            <td>2019</td>
+            <td><img src="images/b1.jpg" style="width:60px; height:70px;"></td>
+          </tr>
+          <tr>
+            <td>Oliver Twist</td>
+            <td>Amrita Pritam</td>
+            <td>Literary Fiction</td>
+            <td>2021</td>
+            <td><img src="images/b1.jpg" style="width:60px; height:70px;"></td>
+          </tr>
+          <tr>
+            <td>Origin of Species</td>
+            <td>Vikram Seth</td>
+            <td>Literary Fiction</td>
+            <td>2014</td>
+            <td><img src="images/b1.jpg" style="width:60px; height:70px;"></td>
+          </tr>
+          <tr>
+            <td>A Week with Gandhi</td>
+            <td>Louis Fisher</td>
+            <td>Historical Fiction.</td>
+            <td>2021</td>
+            <td><img src="images/b1.jpg" style="width:60px; height:70px;"></td>
+
+          </tr>
+          <tr>
+            <td>A Woman's Life</td>
+            <td>Guy de Maupassant</td>
+            <td>Classics</td>
+            <td>2011</td>
+            <td><img src="images/b1.jpg" style="width:60px; height:70px;"></td>
+
+          </tr>
+          <tr>
+            <td>Life in the Clock Tower Valley</td>
+            <td>Shakoor Rather</td>
+            <td>Classics</td>
+            <td>2011</td>
+            <td><img src="images/b1.jpg" style="width:60px; height:70px;"></td>
+          </tr>
+          <tr>
+            <td>Suparipalana</td>
+            <td>Dr Shailendra Joshi</td>
+            <td>Classics</td>
+            <td>2011</td>
+            <td><img src="images/b1.jpg" style="width:60px; height:70px;"></td>
+          </tr>
+          <tr>
+            <td>Elephant in the Womb</td>
+            <td>Kalki Koechlin</td>
+            <td>Classics</td>
+            <td>2011</td>
+            <td><img src="images/b1.jpg" style="width:60px; height:70px;"></td>
+          </tr>
+          <tr>
+            <td>Names of the Women</td>
+            <td>Jeet Thayil</td>
+            <td>Classics</td>
+            <td>2012</td>
+            <td><img src="images/b1.jpg" style="width:60px; height:70px;"></td>
+          </tr>
+          <tr>
+            <td>The Bench</td>
+            <td>Meghan Markle</td>
+            <td>Classics</td>
+            <td>2021</td>
+            <td><img src="images/b1.jpg" style="width:60px; height:70px;"></td>
+          </tr>
+          <tr>
+            <td>My Experiments with Silence</td>
+            <td>Samir Soni</td>
+            <td>Classics</td>
+            <td>2021</td>
+            <td><img src="images/b1.jpg" style="width:60px; height:70px;"></td>
+          </tr>
+          <tr>
+            <td>Whereabouts</td>
+            <td>Guy de Maupassant</td>
+            <td>Classics</td>
+            <td>1911</td>
+            <td><img src="images/b1.jpg" style="width:60px; height:70px;"></td>
+          </tr>
+          <tr>
+            <td>A Woman's Life</td>
+            <td>Jhumpa Lahiri</td>
+            <td>Classics</td>
+            <td>1991</td>
+            <td><img src="images/b1.jpg" style="width:60px; height:70px;"></td>
+          </tr>
+
+        </table>
+      </div>
+        
+        <script>
+          
+          function myFunction() {
+          var input, filter, table, tr, td, i, ii,count1=0;
+          input = document.getElementById("cont1");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("table1");
+          tr = table.querySelectorAll("tr");
+          
+          for (i = 0; i < tr.length; i++) {
+             var tds = tr[i].getElementsByTagName("td");
+            
+             var found = false;
+             for (ii = 0; ii < tds.length && !found; ii++) {
+                if (tds[ii].textContent.toUpperCase().indexOf(filter) > -1) {
+                  found = true;
+                  count1=count1+1;
+                  break;
+              }
+          }
+          tr[i].style.display = found?"":"none";
+      }
+      document.getElementById('count').innerHTML = count1;
+      var rowCount = $('#table1 >tbody >tr:visible').length;
+      document.getElementById('count').innerHTML = rowCount;
+      
+  }
+  
+  </script>
+  </b>
+  
+  
+
+    </body>
+</html>
